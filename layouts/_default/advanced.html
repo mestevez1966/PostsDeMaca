@@ -1,0 +1,75 @@
+{{ define "content" }}
+
+{{ range $section := .Params.sections }}
+  {{ $include_dict := dict "section" $section "Site" $.Site }}
+  {{ $component := print $section.type ".html" }}
+  {{ partial $component $include_dict }}
+{{ end }}
+
+<div class = "r">
+
+<div class = "c2@md c12@xs c12@sm"> </div>
+<div class = "c8@md c12@xs c12@sm"> 
+<section class = "section-publications">
+
+<div class="container pt-50">
+  <div class="r mb-20">
+    <div class="c12@sm c12@md">
+      <div class="filters-group">
+        <label for="filters-search-input" class="filter-label">Buscar contenido</label>
+        <input class="textfield filter__search js-shuffle-search" type="search" id="filters-search-input" />
+      </div>
+    </div>
+  </div>
+  <div class="r mb-20">
+    <div class="c12@sm filters-group-wrap">
+      <div class="filters-group">
+        <p class="filter-label">Filtrar por categoría</p>
+        <div class="btn-group filter-options">
+          <button class="btn btn--primary active" data-group="all">Todo</button>
+          <button class="btn btn--primary" data-group="A" id = "clicked" >Categoría 1</button>
+          <button class="btn btn--primary" data-group="B">Categoría 2</button>
+          <button class="btn btn--primary" data-group="C">Categoría 3</button>
+          <button class="btn btn--primary" data-group="D">Categoría 4</button>
+        </div>
+      </div>
+      <fieldset class="filters-group">
+        <legend class="filter-label">Ordenar</legend>
+        <div class="btn-group sort-options">
+          <label class="btn active">
+            <input type="radio" name="sort-value" value="date-created" checked />Fecha más reciente
+          </label>
+          <label class="btn">
+            <input type="radio" name="sort-value" value="date-created2" />Fecha más antigua
+          </label> 
+        </div>
+      </fieldset>
+    </div>
+  </div>
+</div>
+
+<div class="container p1">
+
+<div id="g" class="r s m">
+{{ range where .Site.Pages "Section" "posts"}}{{if isset .Params "date"}}
+
+<div class="c12@xs c12@sm c6@md b o" data-groups='["{{.Params.category}}"]' dc="{{.Params.date.Format "2006-01-02"}}"><div class="n"><div class="w a"><div class="y"><img data-src="{{.Params.image}}" class = "lozad"/></div></div><div class="j"><div class="c">{{.Params.title}}</div><a href="{{.Params.image}}" download="{{.Params.title | urlize}}"><img src = "/a.png"></a></div>{{.Content | replaceRE "<p>" "<p class=\"k\">"| safeHTML}}<p class="k">{{.Params.date.Format "2006-01-02"}}</p></div></div>
+
+{{end}}{{end}}
+<div class="c1@sm c1@xs my-sizer-element"></div>
+</div>
+</div>
+
+</section>
+</div> 
+
+<div class = "c2@md c12@xs c12@sm"> 
+	<div class="quote-bx">
+	<div class="quote-info">
+	<p class = "widget-title2">¿Alguna duda?</p>
+	<p>Contacta conmigo para obtener información adicional</p>
+	<a class="site-button" href="/contacto/" target="_blank" rel="noreferrer noopener">Enviar mensaje</a>
+	</div>
+	</div>
+</div>
+{{ end }}

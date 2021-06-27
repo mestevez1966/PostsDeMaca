@@ -1,0 +1,57 @@
+title: Posts de Maca
+removePathAccents: true
+disableHugoGeneratorInject: true
+baseURL: /
+params:
+  favicon: /images/macarena-estevez.png
+  palette: blue
+  header:
+    title: Posts de Maca
+    logo_img: /images/macarena-estevez.png
+    logo_img_alt: Posts de Maca
+    has_nav: true
+    nav_links:
+      - label: Inicio
+        url: /
+        style: link
+        has_subnav: false
+      - label: Blog
+        url: https://inteligencia-analitica.com/
+        style: link
+        has_subnav: false
+      - label: Sobre mi
+        url: https://macarenaestevez.com/
+        style: link
+        has_subnav: false
+      - label: Contacto
+        url: '/contacto/'
+        style: primary
+        has_subnav: false
+  footer:
+    content: >-
+       Macarena Estevez es una marca registrada. &copy; 2021.  Aviso legal - Política de privacidad
+    has_social: true
+    social_links:
+      - label: Twitter
+        url: 'https://twitter.com/'
+        style: icon
+        icon_class: twitter
+        new_window: true
+      - label: LinkedIn
+        url: 'https://www.linkedin.com/'
+        style: icon
+        icon_class: linkedin
+        new_window: true
+taxonomies:
+  stub: stub
+disableKinds:
+  - RSS
+  - taxonomy
+  - taxonomyTerm
+  - section
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+permalinks:
+    archy: "/:year/"

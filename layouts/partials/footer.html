@@ -1,0 +1,30 @@
+<footer id="colophon" class="site-footer outer">
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+  <script src = "https://unpkg.com/shufflejs@5.4.1/dist/shuffle.js"></script>
+  
+  <div class="inner">
+    <div class="site-footer-inside">
+      <p class="site-info">
+        {{ if .Site.Params.footer.content }}
+        <span class="copyright">{{ $.Site.Params.footer.content | safeHTML }}</span>
+        {{ end }}
+        {{ range $action := .Site.Params.footer.links }}
+          {{ $include_dict := dict "action" $action }}
+          {{ partial "action_link.html" $include_dict }}
+        {{ end }}
+      </p><!-- .site-info -->
+      {{ if .Site.Params.footer.has_social }}
+      <div class="social-links">
+        {{ range $action := $.Site.Params.footer.social_links }}
+          {{ $include_dict := dict "action" $action }}
+          {{ partial "action_link.html" $include_dict }}
+        {{ end }}
+      </div><!-- .social-links -->
+      {{ end }}
+    </div><!-- .site-footer-inside -->
+  </div><!-- .inner -->
+</footer><!-- .site-footer -->
+
+
