@@ -51,7 +51,7 @@
 <div class="container p1">
 
 <div id="g" class="r s m">
-{{ range where .Site.Pages "Section" "posts2"}}{{if isset .Params "date"}}
+{{ range where .Site.Pages "Section" "posts"}}{{if isset .Params "date"}}
 
 <div class="c12@xs c12@sm c6@md b o" data-groups='["{{.Params.category}}"]' dc="{{.Params.date.Format "2006-01-02"}}"><div class="n"><div class="w a"><div class="y"><img data-src="{{.Params.image}}" class = "lozad"/></div></div><div class="j"><div class="c">{{.Params.title}}</div><a href="{{.Params.image}}" download="{{.Params.title | urlize}}"><img src = "/a.png"></a></div>{{.Content | replaceRE "<p>" "<p class=\"k\">"| safeHTML}}<p class="k">{{.Params.date.Format "2006-01-02"}}</p></div></div>
 
