@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-
+/*
 const fs = require('fs');
 const path = require('path');
 const mkdirp = require('mkdirp');
@@ -38,4 +38,4 @@ function writeFile(outPath, y, m)
 {
     fs.writeFileSync(outPath, JSON.stringify({date: `${y}-${m}-01 00:00:00`}), 'utf8');
     console.log('++', outPath);
-}
+}*/
