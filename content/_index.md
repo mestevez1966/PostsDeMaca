@@ -2,7 +2,7 @@
 layout: advanced
 sections:
 - actions:
-  content: ¡Bienvenido a los posts de Maca! Puedes filtrar las publicaciones por categoría, ordenarlas por título o fecha o utilizar el buscador. Si tienes alguna duda, quieres información adicional sobre alguna publicación o quieres el archivo .ppt correspondiente a cada diapositiva ponte en contacto conmigo
+  content: ¡Bienvenido a los posts de Maca! Puedes filtrar las publicaciones por categoría, ordenarlas por título o fecha o utilizar el buscador. Si tienes alguna duda, quieres información adicional sobre alguna publicación o quieres el archivo .ppt correspondiente a cada diapositiva [ponte en contacto conmigo](/contacto/)
   image: images/5.jpg
   section_id: hero
   title: Posts de Maca

@@ -33,12 +33,12 @@ params:
     has_social: true
     social_links:
       - label: Twitter
-        url: 'https://twitter.com/'
+        url: 'https://twitter.com/MacarenaEstevez'
         style: icon
         icon_class: twitter
         new_window: true
       - label: LinkedIn
-        url: 'https://www.linkedin.com/'
+        url: 'https://www.linkedin.com/in/macaestevez/'
         style: icon
         icon_class: linkedin
         new_window: true

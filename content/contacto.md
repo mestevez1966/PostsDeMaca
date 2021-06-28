@@ -28,28 +28,29 @@ seo:
     relativeUrl: true
     value: images/5.jpg
   title: Contacto
-subtitle:  ¿Tienes alguna duda o quieres información adicional sobre alguno de los posts? Contacta conmigo utilizando el siguiente formulario.
+subtitle:  ¿Tienes alguna duda o quieres información adicional sobre alguno de los posts? Contacta conmigo al correo electrónico [mestevezmunoz@deloitte.es](mailto:mestevezmunoz@deloitte.es) utilizando el siguiente formulario.
 title: Contacto
 ---
 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-<br><br>
-
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-<br><br>
-
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-<br><br>
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-<br><br>
-
-<hr>
-<br><br>
-
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+<form name="contact" netlify>
+  <p>
+    <label>Nombre completo*<input type="text" name="nombre" /></label>
+  </p>
+  <p>
+    <label>Correo electrónico*<input type="email" name="email" /></label>
+  </p>
+  
+  <p>
+     <label>Mensaje* <textarea name="mensaje"></textarea></label>
+  </p>
+  
+  <p>
+    <label>
+        <input type="checkbox" name="politicas" value="Politicas"> Acepto la <a href = "">política de privacidad</a>
+      </label>
+    </p>
+  <p>
+    <button class = "btn btn-primary" type="submit">Enviar</button>
+  </p>
+</form>
