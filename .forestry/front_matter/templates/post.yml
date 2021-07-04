@@ -4,10 +4,10 @@ hide_body: false
 fields:
 - type: text
   name: category
-  label: category
+  label: Categoría
 - type: datetime
   name: date
-  label: date
+  label: Fecha
 - type: file
   name: image
-  label: image
+  label: Imagen
