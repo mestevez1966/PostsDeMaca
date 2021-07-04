@@ -28,29 +28,31 @@ seo:
     relativeUrl: true
     value: images/5.jpg
   title: Contacto
-subtitle:  ¿Tienes alguna duda o quieres información adicional sobre alguno de los posts? Contacta conmigo al correo electrónico [mestevezmunoz@deloitte.es](mailto:mestevezmunoz@deloitte.es) utilizando el siguiente formulario.
+subtitle:  ¿Tienes alguna duda o quieres información adicional sobre alguno de los posts? Contacta conmigo al correo electrónico [mestevezmunoz@deloitte.es](mailto:mestevezmunoz@deloitte.es) o utilizando el siguiente formulario.
 title: Contacto
 ---
 
 
 <form name="contact" netlify>
   <p>
-    <label>Nombre completo*<input type="text" name="nombre" /></label>
+    <label>Nombre completo*<input type="text" name="nombre" required/></label>
   </p>
   <p>
-    <label>Correo electrónico*<input type="email" name="email" /></label>
+    <label>Correo electrónico*<input type="email" name="email" required/></label>
   </p>
   
   <p>
-     <label>Mensaje* <textarea name="mensaje"></textarea></label>
+     <label>Mensaje* <textarea name="mensaje" required></textarea></label>
   </p>
   
   <p>
     <label>
-        <input type="checkbox" name="politicas" value="Politicas"> Acepto la <a href = "">política de privacidad</a>
+        <input type="checkbox" name="politicas" value="Politicas" required> Acepto la <a href = "">política de privacidad</a>
       </label>
     </p>
   <p>
     <button class = "btn btn-primary" type="submit">Enviar</button>
   </p>
 </form>
+
+*Los elementos marcados con un asterisco son obligatorios.

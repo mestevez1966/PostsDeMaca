@@ -2,13 +2,13 @@
   
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
-  <script src = "https://unpkg.com/shufflejs@5.4.1/dist/shuffle.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Shuffle/5.4.1/shuffle.min.js" integrity="sha512-26vtWkj1Yt/eY2Ykb7TO/RzzysOKS7zaD/055jS+2IW4DX89qlH/HziTFqfzMLAxpFVpYhPWgTdCcavzf8Qs8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   
   <div class="inner">
     <div class="site-footer-inside">
       <p class="site-info">
         {{ if .Site.Params.footer.content }}
-        <span class="copyright">{{ $.Site.Params.footer.content | safeHTML }}</span>
+        <span class="copyright">{{ replace $.Site.Params.footer.content "{year}" now.Year  | safeHTML }}</span>
         {{ end }}
         {{ range $action := .Site.Params.footer.links }}
           {{ $include_dict := dict "action" $action }}
@@ -26,5 +26,3 @@
     </div><!-- .site-footer-inside -->
   </div><!-- .inner -->
 </footer><!-- .site-footer -->
-
-

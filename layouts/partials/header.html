@@ -4,7 +4,7 @@
       <div class="site-branding">
         {{ if .Site.Params.header.logo_img }}
         <div class = "r">
-        <p class="site-logo"><a href="{{ $.Site.Params.header.url | default "/" | relURL }}"><img src="{{ $.Site.Params.header.logo_img | relURL }}" alt="{{ $.Site.Params.header.logo_img_alt }}" /></a></p>
+        <p class="site-logo"><a href="{{ $.Site.Params.header.url | default "/" | relURL }}"><img src="{{ $.Site.Params.header.logo_img | relURL }}" alt="{{ $.Site.Params.header.logo_img_alt }}" width = "48px" height = "48px" /></a></p>
                 <p class="site-title"><a href="{{ $.Site.Params.header.url | default "/" | relURL }}">{{ $.Site.Params.header.title }}</a></p>
                    </div>
         {{ else }}

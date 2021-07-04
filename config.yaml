@@ -29,7 +29,7 @@ params:
         has_subnav: false
   footer:
     content: >-
-       Macarena Estevez es una marca registrada. &copy; 2021.  Aviso legal - Política de privacidad
+       Macarena Estevez es una marca registrada. &copy; {year}.  <a href = "/aviso-legal/">Aviso legal</a> - <a href = "/politica-privacidad/">Política de privacidad</a>
     has_social: true
     social_links:
       - label: Twitter

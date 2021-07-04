@@ -27,10 +27,10 @@
         <p class="filter-label">Filtrar por categoría</p>
         <div class="btn-group filter-options">
           <button class="btn btn--primary active" data-group="all">Todo</button>
-          <button class="btn btn--primary" data-group="A" id = "clicked" >Categoría 1</button>
-          <button class="btn btn--primary" data-group="B">Categoría 2</button>
-          <button class="btn btn--primary" data-group="C">Categoría 3</button>
-          <button class="btn btn--primary" data-group="D">Categoría 4</button>
+          <button class="btn btn--primary" data-group="A" id = "clicked" >Analytics, IA</button>
+          <button class="btn btn--primary" data-group="B">Business</button>
+          <button class="btn btn--primary" data-group="C">Vida y futuro</button>
+          <button class="btn btn--primary" data-group="D">Otros</button>
         </div>
       </div>
       <fieldset class="filters-group">
@@ -53,7 +53,7 @@
 <div id="g" class="r s m">
 {{ range where .Site.Pages "Section" "posts"}}{{if isset .Params "date"}}
 
-<div class="c12@xs c12@sm c6@md b o" data-groups='["{{.Params.category}}"]' dc="{{.Params.date.Format "2006-01-02"}}"><div class="n"><div class="w a"><div class="y"><img data-src="{{.Params.image}}" class = "lozad"/></div></div><div class="j"><div class="c">{{.Params.title}}</div><a href="{{.Params.image}}" download="{{.Params.title | urlize}}"><img src = "/a.png"></a></div>{{.Content | replaceRE "<p>" "<p class=\"k\">"| safeHTML}}<p class="k">{{.Params.date.Format "2006-01-02"}}</p></div></div>
+<div class="c12@xs c12@sm c6@md b o" data-groups='["{{.Params.category}}"]' dc="{{.Params.date.Format "2006-01-02"}}"><div class="n"><div class="w a"><div class="y"><img data-src="{{.Params.image}}" class = "lozad"/></div></div><div class="j"><div class="c">{{.Params.title}}</div><a href="{{.Params.image}}" aria-label="download" download="{{.Params.title | urlize}}"><img src = "/a.png"></a></div>{{.Content | replaceRE "<p>" "<p class=\"k\">"| safeHTML}}<p class="k">{{.Params.date.Format "2006-01-02"}}</p></div></div>
 
 {{end}}{{end}}
 <div class="c1@sm c1@xs my-sizer-element"></div>
@@ -68,7 +68,7 @@
 	<div class="quote-info">
 	<p class = "widget-title2">¿Alguna duda?</p>
 	<p>Contacta conmigo para obtener información adicional</p>
-	<a class="site-button" href="/contacto/" target="_blank" rel="noreferrer noopener">Enviar mensaje</a>
+	<a class="site-button" href="/contacto/" rel="noreferrer noopener">Enviar mensaje</a>
 	</div>
 	</div>
 </div>

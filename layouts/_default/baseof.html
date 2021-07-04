@@ -24,7 +24,6 @@
         {{ if .Site.Params.favicon }}
         <link rel="icon" href="{{ $.Site.Params.favicon | relURL }}">
         {{ end }}
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
 <style>
@@ -83,7 +82,7 @@
 		 transform: scale(1.05);
 	}
 	.site-button:link {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .widget-title2{
@@ -110,26 +109,26 @@
   visibility: hidden;
   z-index: 1000;
   box-shadow: 1px 3px 6px 0 rgba(0,0,0,.2);
-   text-decoration:none;
+  text-decoration:none;
 }
-#button::after {
-  content: "\f077";
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 1.5em;
-  line-height: 50px;
-  color: #fff;
+
+.chevron{
+  margin-top: 10px;
+  color:white;
+  transition: all 0.1s;
 }
+
+.chevron:hover{
+  margin-top: 10px;
+  transform: scale(1.08);
+}
+
 #button:hover {
   cursor: pointer;
-  background-color: white;
-  border: 1px solid #00c6ff;
 }
 
 #button:hover:after {
  color:#00c6ff;
-
 }
 
 #button.show {
@@ -842,6 +841,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox=
     </head>
     <body class="palette-{{ .Site.Params.palette }}">
         <a id="button">
+          <svg class = "chevron" width="27" height="27" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M1683 1331l-166 165q-19 19-45 19t-45-19l-531-531-531 531q-19 19-45 19t-45-19l-166-165q-19-19-19-45.5t19-45.5l742-741q19-19 45-19t45 19l742 741q19 19 19 45.5t-19 45.5z"/></svg>
         </a>
         
         <div id="page" class="site">

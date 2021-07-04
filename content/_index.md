@@ -8,7 +8,7 @@ sections:
   title: Posts de Maca
   type: section_hero
 seo:
-  description: Posts de Maca
+  description: ¡Bienvenido a los Posts de Maca! En esta web podrás encontrar las publicaciones de LinkedIn de Macarena Estevez. Podrás verlas por categoría, ordenarlas por título o fecha o utilizar el buscador
   extra:
   - keyName: property
     name: og:type
