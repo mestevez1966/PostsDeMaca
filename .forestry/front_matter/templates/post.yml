@@ -12,5 +12,6 @@ fields:
   name: image
   label: Imagen
 pages:
+- content/posts/2021/2021-07-05-2-1.md
 - content/posts/2021/2021-07-05-2.md
 - content/posts/2021/2021-07-05.md
