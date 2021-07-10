@@ -57,8 +57,13 @@ h6 {
   font-weight: normal;
 }
 
-ul {
-  list-style: none;
+.post-content ul {
+  margin-left: 30px;
+}
+
+.post-content h2{
+  font-size: 30px;
+  margin-top: 20px;
 }
 
 button,
