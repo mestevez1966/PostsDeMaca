@@ -3,17 +3,232 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/posts/2021/2021-08-30_2/</loc>
+    <lastmod>2021-08-30T12:01:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2021-08-30T12:01:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2021/2021-08-30/</loc>
+    <lastmod>2021-08-30T12:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2021/2021-07-29/</loc>
+    <lastmod>2021-07-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2021/2021-07-27_2/</loc>
+    <lastmod>2021-07-27T00:01:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2021/2021-07-27/</loc>
+    <lastmod>2021-07-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2021/2021-07-22_2/</loc>
+    <lastmod>2021-07-22T00:01:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2021/2021-07-22/</loc>
+    <lastmod>2021-07-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2021/2021-07-21_2/</loc>
+    <lastmod>2021-07-21T00:01:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2021/2021-07-21/</loc>
+    <lastmod>2021-07-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2021/2021-07-20/</loc>
+    <lastmod>2021-07-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2021/2021-07-20_2/</loc>
+    <lastmod>2021-07-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2021/2021-07-19/</loc>
+    <lastmod>2021-07-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2021/2021-07-19_2/</loc>
+    <lastmod>2021-07-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2021/2021-07-16/</loc>
+    <lastmod>2021-07-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2021/2021-07-16_2/</loc>
+    <lastmod>2021-07-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2021/2021-07-15/</loc>
+    <lastmod>2021-07-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2021/2021-07-15_2/</loc>
+    <lastmod>2021-07-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2021/2021-07-14-2/</loc>
+    <lastmod>2021-07-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2021/2021-07-14/</loc>
+    <lastmod>2021-07-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2021/2021-07-13-2/</loc>
+    <lastmod>2021-07-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2021/2021-07-13/</loc>
+    <lastmod>2021-07-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2021/2021-07-12/</loc>
+    <lastmod>2021-07-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/aviso-legal/</loc>
+    <lastmod>2021-07-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/politica-privacidad/</loc>
+    <lastmod>2021-07-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2021/2021-07-08-2/</loc>
+    <lastmod>2021-07-08T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2021/2021-07-08/</loc>
+    <lastmod>2021-07-08T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2021/2021-07-07/</loc>
+    <lastmod>2021-07-07T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2021/2021-07-05/</loc>
+    <lastmod>2021-07-05T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2021/2021-07-02/</loc>
+    <lastmod>2021-07-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2021/2021-07-01/</loc>
+    <lastmod>2021-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2021/2021-07-01_2/</loc>
+    <lastmod>2021-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2021/2021-06-30/</loc>
+    <lastmod>2021-06-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2021/2021-06-29/</loc>
+    <lastmod>2021-06-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2021/2021-06-28/</loc>
+    <lastmod>2021-06-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2021/2021-06-25/</loc>
+    <lastmod>2021-06-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2021/2021-06-24/</loc>
+    <lastmod>2021-06-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2021/2021-06-23/</loc>
+    <lastmod>2021-06-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2021/2021-06-23_2/</loc>
+    <lastmod>2021-06-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2021/2021-06-22/</loc>
+    <lastmod>2021-06-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2021/2021-06-22_2/</loc>
+    <lastmod>2021-06-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2021/2021-06-21/</loc>
+    <lastmod>2021-06-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2021/2021-06-18/</loc>
+    <lastmod>2021-06-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2021/2021-06-18_2/</loc>
+    <lastmod>2021-06-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/posts/2021/2021-06-17/</loc>
     <lastmod>2021-06-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/posts/2021/2021-06-17_2/</loc>
-    <lastmod>2021-06-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
     <lastmod>2021-06-17T00:00:00+00:00</lastmod>
   </url>
   
@@ -6560,11 +6775,6 @@
   <url>
     <loc>/posts/2016/2016-01-04/</loc>
     <lastmod>2016-01-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/aviso-legal/</loc>
-    <lastmod>2016-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>

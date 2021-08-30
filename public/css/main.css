@@ -278,7 +278,8 @@ ul {
 
 ol {
   list-style: decimal;
-  padding: 0 0 0 1.5em; }
+  padding: 0 0 0 1.5em;
+  padding-left: 20px !important; }
 
 li > ul,
 li > ol {
@@ -1566,10 +1567,8 @@ textarea {
   padding-bottom: 1.5em;
   padding-top: 1.5em; }
 
-#colophon a:not(.button) {
-  color: inherit; }
-  #colophon a:not(.button):hover, #colophon a:not(.button):focus {
-    color: #00c6ff; }
+#colophon a:not(.button):hover, #colophon a:not(.button):focus {
+  color: #00c6ff; }
 
 .site-info,
 .social-links {
@@ -1776,8 +1775,12 @@ h6 {
   font-size: 100%;
   font-weight: normal; }
 
-ul {
-  list-style: none; }
+.post-content ul {
+  margin-left: 30px; }
+
+.post-content h2 {
+  font-size: 30px;
+  margin-top: 20px; }
 
 button,
 input,
