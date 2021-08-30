@@ -434,8 +434,9 @@ class Demo {
       // If there is a current filter applied, ignore elements that don't match it.
       if (shuffle.group !== Shuffle.ALL_ITEMS) {
         // Get the item's groups.
-        const groups = JSON.parse(element.getAttribute('d'));
+        const groups = JSON.parse(element.getAttribute('data-groups'));
         const isElementInCurrentGroup = groups.indexOf(shuffle.group) !== -1;
+        console.log(groups);
         // Only search elements in the current group
         if (!isElementInCurrentGroup) {
           return false;
