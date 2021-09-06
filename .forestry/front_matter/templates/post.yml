@@ -12,7 +12,6 @@ fields:
   name: image
   label: Imagen
 pages:
-- content/posts/2021/2020-08-30_2.md
 - content/posts/2021/2021-07-05.md
 - content/posts/2021/2021-07-07.md
 - content/posts/2021/2021-07-08.md
@@ -37,3 +36,7 @@ pages:
 - content/posts/2021/2021-07-27_2.md
 - content/posts/2021/2021-07-29.md
 - content/posts/2021/2021-08-30.md
+- content/posts/2021/2021-09-01.md
+- content/posts/2021/2021-09-02.md
+- content/posts/2021/2021_08_31.md
+- content/posts/2021/2021_08_31_2.md
