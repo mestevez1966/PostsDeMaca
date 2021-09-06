@@ -1,0 +1,25 @@
+name: tweetbot
+
+on:
+  schedule:
+    - cron: '0 22 * * *'
+
+jobs:
+  tweetbot-post:
+    runs-on: macOS-latest
+    env:
+      FB_TOKEN: ${{ secrets.FB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v2
+      - uses: r-lib/actions/setup-r@master
+      - name: Install rtweet package
+        run: Rscript -e 'install.packages("Rfacebook", dependencies = TRUE)'
+      - name: Create and post posts
+        run: Rscript facebook_download.R
+      - name: Commit files
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add --all
+          git commit -am "add data"
+          git push 

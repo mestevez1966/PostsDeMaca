@@ -1,4 +1,4 @@
-library(Rfacebook)
+
 
 getPage <- function (page, token, n = 25, since = NULL, until = NULL, feed = FALSE, 
                      reactions = FALSE, verbose = TRUE, api = NULL) {
@@ -20,7 +20,7 @@ getPage <- function (page, token, n = 25, since = NULL, until = NULL, feed = FAL
   if (n > 25) {
     url <- paste0(url, "&limit=25")
   }
-  content <- callAPI(url = url, token = token, api = api)
+  content <- Rfacebook::callAPI(url = url, token = token, api = api)
   l <- length(content$data)
   if (verbose) 
     cat(l, "posts ")
@@ -29,7 +29,7 @@ getPage <- function (page, token, n = 25, since = NULL, until = NULL, feed = FAL
     cat("Error!\n")
     Sys.sleep(0.5)
     error <- error + 1
-    content <- callAPI(url = url, token = token)
+    content <- Rfacebook::callAPI(url = url, token = token)
     if (error == 3) {
       stop(content$error_msg)
     }
@@ -54,7 +54,7 @@ getPage <- function (page, token, n = 25, since = NULL, until = NULL, feed = FAL
            sincedate <= mindate) {
       Sys.sleep(0.5)
       url <- content$paging$`next`
-      content <- callAPI(url = url, token = token, api = api)
+      content <- Rfacebook::callAPI(url = url, token = token, api = api)
       l <- l + length(content$data)
       if (length(content$data) > 0) {
         if (verbose) 
@@ -65,7 +65,7 @@ getPage <- function (page, token, n = 25, since = NULL, until = NULL, feed = FAL
         cat("Error!\n")
         Sys.sleep(0.5)
         error <- error + 1
-        content <- callAPI(url = url, token = token, 
+        content <- Rfacebook::callAPI(url = url, token = token, 
                            api = api)
         if (error == 3) {
           stop(content$error_msg)
@@ -128,7 +128,7 @@ data <- getPage(page, token
                 ,
                 since = Sys.Date(), until = Sys.time()
 )
-View(data)
+# View(data)
 
 # Get only posts with pictures (should be all)
 data <- data[!is.na(data$picture), ]
@@ -217,7 +217,7 @@ if(nrow(data) == 0){
   
   for(i in 1:nrow(data)){
     
-    file_name <- paste0("content/", paste0(Sys.Date(), "_", i) , ".md")
+    file_name <- paste0("content/posts/", format(Sys.Date(), "%Y"), "/", paste0(Sys.Date(), "_", i) , ".md")
     
     sink(file = file_name)
     
