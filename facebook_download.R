@@ -155,7 +155,7 @@ if(nrow(data) == 0){
   
   for(i in 1:nrow(data)) {
     
-    if(grepl("#IA", data$message[i], fixed = TRUE)){
+    if(grepl("#IA | #Analytics", data$message[i], fixed = FALSE)){
       
       cat <- "A"
       
