@@ -116,8 +116,8 @@ pageDataToDF <- function (json) {
 token <- Sys.getenv("FB_TOKEN")
 
 page <- "PostsDeMaca"
-# from <- "Sys.Date()"
-# to <- Sys.time()
+from <- "2022-04-29"
+to <- Sys.time()
 
 
 #-------------------------------
@@ -126,7 +126,7 @@ page <- "PostsDeMaca"
 
 data <- getPage(page, token
                 ,
-                since = Sys.Date(), until = Sys.time()
+                since = from, until = to
 )
 # View(data)
 
