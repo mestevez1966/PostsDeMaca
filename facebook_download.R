@@ -165,7 +165,7 @@ if(nrow(data) == 0){
         cat <- "B"
       } else {
         
-        if(grepl("#Life|#Futuro|#Vida", data$message[i], fixed = TRUE)) {
+        if(grepl("#Life|#Futuro|#Vida", data$message[i], fixed = FALSE)) {
           cat <- "C"
         } else {
           
