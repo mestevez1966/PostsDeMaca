@@ -126,7 +126,7 @@ page <- "PostsDeMaca"
 
 data <- getPage(page, token
                 ,
-                since = Sys.Date(), until = Sys.time()
+                since = "2023/05/08", until = Sys.time()
 )
 # View(data)
 
