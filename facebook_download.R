@@ -116,18 +116,22 @@ pageDataToDF <- function (json) {
 token <- Sys.getenv("FB_TOKEN")
 
 page <- "PostsDeMaca"
-# from <- "Sys.Date()"
-# to <- Sys.time()
+from <- "2023-07-11"
+to <- Sys.time()
 
 
 #-------------------------------
 # Get the data
 #-------------------------------
 
-data <- getPage(page, token
-                ,
-                since = Sys.Date(), until = Sys.time()
+data <- getPage(page, token,
+                since = from, until = to,
+                #since = Sys.Date(), until = Sys.time()
 )
+
+
+
+
 # View(data)
 
 # Get only posts with pictures (should be all)
