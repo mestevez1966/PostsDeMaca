@@ -227,7 +227,7 @@ if(nrow(data) == 0){
     
     cat("---", "\n")
     cat("category:", data$cat[i], "\n")
-    cat(paste("date:", Sys.Date()), "\n")
+    cat(paste("date:", as.Date(data$created_time)), "\n")
     cat(paste0("image: ", substring(img_name[i], 7)), "\n")
     cat("---", "\n")
     cat(sep = "\n")
